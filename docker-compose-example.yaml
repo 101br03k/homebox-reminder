@@ -1,0 +1,10 @@
+services:
+  homebox-reminder:
+    build: .
+    image: homebox-reminder:latest
+    container_name: homebox-reminder
+    restart: unless-stopped
+    env_file:
+      - .env
+    volumes:
+      - ./data:/data
