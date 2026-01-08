@@ -1,7 +1,6 @@
 services:
   homebox-reminder:
-    build: .
-    image: homebox-reminder:latest
+    image: ghcr.io/101br03k/homebox-reminder:latest
     container_name: homebox-reminder
     restart: unless-stopped
     env_file:
