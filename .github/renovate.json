@@ -1,0 +1,18 @@
+{
+  "labels": ["dependencies"],
+  "packageRules": [
+    {
+      "matchPackageNames": ["/eslint/"],
+      "labels": ["linting"]
+    },
+    {
+      "matchDepTypes": ["optionalDependencies"],
+      "addLabels": ["optional"]
+    }
+    {
+      "matchDatasources": ["docker"],
+      "matchPackageNames": ["python"],
+      "versioning": "pep440"
+    }
+  ]
+}
