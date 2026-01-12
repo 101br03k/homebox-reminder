@@ -2,17 +2,16 @@
   "labels": ["dependencies"],
   "packageRules": [
     {
-      "matchPackageNames": ["/eslint/"],
-      "labels": ["linting"]
+      "matchPackagePatterns": ["^eslint"],
+      "addLabels": ["linting"]
     },
     {
       "matchDepTypes": ["optionalDependencies"],
       "addLabels": ["optional"]
-    }
+    },
     {
       "matchDatasources": ["docker"],
-      "matchPackageNames": ["python"],
-      "versioning": "pep440"
+      "matchPackageNames": ["python"]
     }
   ]
 }
